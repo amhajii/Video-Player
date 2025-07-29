@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ویدیو پلیر پیشرفته</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="content">
+
+
+        <div class="name-and-select-Section">
+            <div class="vv">
+                <h1 id="title">Amplayer</h1>
+                <div class="speed-display" id="speedDisplay">Speed : 1.00 x</div>
+
+            </div>
+
+            <label for="fileInput" id="lbl" class="custom-file-button">
+                <div id="shadow"></div>
+                <svg id="add-Icon" xmlns="http://www.w3.org/2000/svg" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                    <path
+                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                </svg>
+                Open
+            </label>
+            <input type="file" id="fileInput" accept="video/*">
+
+        </div>
+
+
+
+        <div class="video-container">
+            <video id="videoPlayer" controls="false">
+                مرورگر شما از پخش ویدیو پشتیبانی نمی‌کند.
+            </video>
+
+            <div id="controller-section">
+                <button id="playPause">▶️</button>
+                
+
+
+
+                <i id="play-pause-icon" class="fa fa-play"></i>
+                
+                <span id="currentTime">0:00</span>
+                <input type="range" id="seek" min="0" value="0">
+
+                <div class="left-side-of-controll-bar">
+                    <span id="duration">0:00</span>
+                    <p id="currentSpeed">0:00</p>
+                    <i id="gear" class="fa fa-gear"></i>
+
+                    <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+                    <button id="fullscreen">⛶</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <a href="https://github.com/amhajii" target="_blank" id="CopyRight">Designed by Amhaji .</a>
+
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
